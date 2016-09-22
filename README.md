@@ -1,5 +1,7 @@
 # Electrode Static Paths
 
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+
 Electrode Server Decor to serve static files using [inert].
 
 ## Usage
@@ -55,3 +57,9 @@ const config = {
 ```
 
 [inert]: https://github.com/hapijs/inert
+[npm-image]: https://badge.fury.io/js/electrode-static-paths.svg
+[npm-url]: https://npmjs.org/package/electrode-static-paths
+[travis-image]: https://travis-ci.org/electrode-io/electrode-static-paths.svg?branch=master
+[travis-url]: https://travis-ci.org/electrode-io/electrode-static-paths
+[daviddm-image]: https://david-dm.org/electrode-io/electrode-static-paths.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/electrode-io/electrode-static-paths

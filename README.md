@@ -26,7 +26,7 @@ By default, the static files are served from `dist` under CWD.
   * Route `/html` will serve files from `dist/html`
   * Route `/js` will serve files from `dist/js`
   * Route `/images` will serve files from `dist/images`
-  
+
 You can change the prefix `dist` with options to the `electrodeStaticPaths` plugin:
 
 ```js
@@ -55,6 +55,8 @@ const config = {
   }
 };
 ```
+
+Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
 
 [inert]: https://github.com/hapijs/inert
 [npm-image]: https://badge.fury.io/js/electrode-static-paths.svg

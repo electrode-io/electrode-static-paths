@@ -26,6 +26,8 @@ By default, the static files are served from `dist` under CWD.
   * Route `/js` will serve files from `dist/js`
   * Route `/images` will serve files from `dist/images`
 
+### Route and Path prefixes
+
 You can change the prefix `dist` with `pathPrefix` in options to the `electrodeStaticPaths` plugin.
 
 You can add a route prefix with `routePrefix` option.
@@ -44,6 +46,26 @@ const config = {
   }
 };
 ```
+
+### Routes
+
+You can override the `/html`, `/js`, and `/images` routes with `routes` option.
+
+For example, if you only want to serve files at `/js`, then:
+
+```js
+{
+  plugins: {
+    electrodeStaticPaths: {
+      options: {
+        routes: [ "js" ]
+      }
+    }
+  }
+}
+```
+
+### Route config
 
 You can also specify configs to be passed to `server.route`:
 

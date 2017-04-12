@@ -12,7 +12,6 @@ Install
 $ npm i electrode-static-paths --save
 ```
 
-
 ```js
 const electrodeServer = require("electrode-server");
 
@@ -27,13 +26,18 @@ By default, the static files are served from `dist` under CWD.
   * Route `/js` will serve files from `dist/js`
   * Route `/images` will serve files from `dist/images`
 
-You can change the prefix `dist` with options to the `electrodeStaticPaths` plugin:
+You can change the prefix `dist` with `pathPrefix` in options to the `electrodeStaticPaths` plugin.
+
+You can add a route prefix with `routePrefix` option.
+
+For example:
 
 ```js
 const config = {
   plugins: {
     electrodeStaticPaths: {
       options: {
+        routePrefix: "/test",
         pathPrefix: "myfiles"
       }
     }

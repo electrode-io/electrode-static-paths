@@ -24,8 +24,11 @@
   },
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 4.2.2"
+    "node": ">= 8.11.3"
   },
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "chalk": "^1.1.1",
     "inert": "^5.0.0",

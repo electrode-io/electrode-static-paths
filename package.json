@@ -1,11 +1,11 @@
 {
   "name": "electrode-static-paths",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "An electrode-server decor to serve static files using inert",
   "main": "lib/decor-static-paths.js",
   "scripts": {
-    "test": "gulp check",
-    "coverage": "gulp check"
+    "test": "clap check",
+    "coverage": "clap check"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,9 @@
     "decor",
     "static",
     "paths"
+  ],
+  "files": [
+    "lib"
   ],
   "author": {
     "name": "Joel Chen",
@@ -28,14 +31,38 @@
   },
   "dependencies": {
     "chalk": "^1.1.1",
-    "inert": "^4.0.1",
+    "electrode-hapi-compat": "^1.0.0",
+    "inert": "^4.0.0",
     "lodash": "^4.5.1"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "electrode-archetype-njs-module-dev": "^1.0.1",
+    "electrode-archetype-njs-module-dev": "^3.0.0",
+    "inert": "^4.0.0",
     "electrode-server": "^1.0.0",
-    "gulp": "^3.9.1",
-    "superagent": "^2.2.0"
+    "superagent": "^3.8.3"
+  },
+  "peerDependencies": {
+    "inert": "^4.0.0 || ^5.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "exclude": [
+      "coverage",
+      "*clap.js",
+      "gulpfile.js",
+      "dist",
+      "test"
+    ],
+    "check-coverage": true,
+    "statements": 100,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "cache": true
   }
 }

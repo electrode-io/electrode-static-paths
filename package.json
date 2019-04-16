@@ -1,6 +1,6 @@
 {
   "name": "electrode-static-paths",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "An electrode-server decor to serve static files using inert",
   "main": "lib/decor-static-paths.js",
   "scripts": {

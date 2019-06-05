@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git@github.com:electrode-io/electrode-static-paths.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "electrode",
     "decor",

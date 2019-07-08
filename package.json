@@ -5,7 +5,9 @@
   "main": "lib/decor-static-paths.js",
   "scripts": {
     "test": "clap check",
-    "coverage": "clap check"
+    "coverage": "clap check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,8 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "electrode-hapi-compat": "^1.0.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "electrode-archetype-njs-module-dev": "^3.0.0",
@@ -63,5 +66,6 @@
     "functions": 100,
     "lines": 100,
     "cache": true
-  }
+  },
+  "snyk": true
 }

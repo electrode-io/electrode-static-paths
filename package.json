@@ -31,17 +31,16 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "electrode-hapi-compat": "^1.0.0",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
     "electrode-archetype-njs-module-dev": "^3.0.0",
-    "inert": "^5.0.0",
-    "electrode-server": "^2.0.0",
+    "@hapi/inert": "^5.2.0",
+    "electrode-server": "^3.0.0",
     "superagent": "^3.8.3"
   },
   "peerDependencies": {
-    "inert": "^4.0.0 || ^5.0.0"
+    "@hapi/inert": "^5.2.0"
   },
   "nyc": {
     "all": true,
